@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./img.jpg" alt="bridge" id="example-image" class="example-img">
+    <div class="range-bars">
+        <label>Jasność
+            <input type="range" id="brightness-bar" class=bar min="25" max="175" value="100">
+        </label>
+        <label>Kontrast
+            <input type="range" id="contrast-bar" class=bar min="25" max="175" value="100">
+        </label>
+        <label>Nasycenie
+            <input type="range" id="saturation-bar" class=bar min="0" max="200" value="100">
+        </label>
+        <label>Odcień
+            <input type="range" id="hue-bar" class=bar min="-180" max="180" value="0">
+        </label>
+        <label>Rozmycie
+            <input type="range" id="blur-bar" class=bar min="0" max="3" value="0">
+        </label>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
